@@ -1,16 +1,41 @@
-# React + Vite
+# Team Task Manager Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Full-stack team task management system with RBAC and soft delete functionality.
 
-Currently, two official plugins are available:
+## Tech Stack
+- Frontend: React (Vite + Tailwind)
+- Backend: Supabase (Postgres + Auth + RLS)
+- Deployment: Vercel (Frontend), Supabase (Backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Authentication (Email + Password)
+- Role-Based Access Control (Admin / Member)
+- Team-based task management
+- Soft delete implementation
+- Supabase Row Level Security (RLS)
 
-## React Compiler
+## Database Schema
+Tables:
+- teams
+- profiles
+- tasks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## RLS Policies
+- Admin: full team access
+- Member: own tasks only
+- Soft delete using deleted_at column
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone repo
+2. Install dependencies:
+   npm install
+3. Create .env file:
+   VITE_SUPABASE_URL=
+   VITE_SUPABASE_ANON_KEY=
+4. Run:
+   npm run dev
+
+## Live URL
+(https://team-task-manager-xi.vercel.app/)
