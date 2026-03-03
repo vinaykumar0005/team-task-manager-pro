@@ -42,4 +42,13 @@ Tables:
 
 ## Where AI tools were used
 To Build the policy in the supabase
+
+## Login credetials
+Team Admin 
+email: vinaychahal14@gmail.com
+password: 1122334455
+
+Team member
+email: vinaydev0005@gmail.com
+password: 1122334455
  
