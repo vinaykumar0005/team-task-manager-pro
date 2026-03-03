@@ -40,6 +40,6 @@ Tables:
 ## Live URL
 (https://team-task-manager-xi.vercel.app/)
 
-##Where AI tools were used
+## Where AI tools were used
 To Build the policy in the supabase
  
