@@ -43,7 +43,7 @@ Tables:
 ## Where AI tools were used
 To Build the policy in the supabase
 
-## Login credetials
+## Login credentials
 Team Admin 
 email: vinaychahal14@gmail.com
 password: 1122334455
